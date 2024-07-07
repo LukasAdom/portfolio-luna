@@ -119,7 +119,7 @@ canvas{
   position: fixed;
   top: 0%;
   left: 84%;
-  animation: canva-left 1s forwards 3s;
+  animation: canva-left 1s forwards 12.5s;
 }
 
 section{
@@ -141,7 +141,7 @@ section{
 }
 
 .header-bg.once{
-  animation: header-down 2s forwards 3.5s;
+  animation: header-down 2s forwards 12.5s;
 
 }
 
@@ -201,7 +201,7 @@ margin: auto;
 
 .luna-main{
   opacity: 0;
-  animation: fadeIn 0.5s forwards 3s;
+  animation: fadeIn 0.5s forwards 9s;
 }
 
 .luna-hover{
@@ -253,7 +253,7 @@ margin: auto;
 
 .logo-main{
   opacity: 0;
-  animation: fadeIn 0.5s forwards 3s;
+  animation: fadeIn 0.5s forwards 9s;
 
 }
 
@@ -692,7 +692,7 @@ margin: auto;
   background-color: #955bd6;
   
   opacity: 0.35;
-  animation: sidebar-right 2s forwards 3.5s;
+  animation: sidebar-right 2s forwards 12.5s;
 
 }
 
@@ -705,7 +705,7 @@ margin: auto;
   width: 60%;
   height: 100%;
   background: linear-gradient(0deg, rgba(15,4,28,0.2) 0%, rgba(39,49,140,0) 5%, rgba(63,94,251,0) 50%, rgba(39,49,140,0) 75%, rgba(15,4,28,1) 100%);
-  animation: sidebar-right 2s forwards 3.5s;
+  animation: sidebar-right 2s forwards 12.5s;
 
 }
 
@@ -721,7 +721,7 @@ margin: auto;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 
-  animation: sidebar-right 2s forwards 3.5s;
+  animation: sidebar-right 2s forwards 12.5s;
 }
 
 
@@ -751,7 +751,7 @@ margin: auto;
   background-image: url(img/bible.png);
   
   opacity: 0.2;
-  animation: sidebar-right 2s forwards 3.5s;
+  animation: sidebar-right 2s forwards 12.5s;
 }
 
 .sidebar-img2{
@@ -765,7 +765,7 @@ margin: auto;
   background-image: url(img/bible.png);
   
   opacity: 0.2;
-  animation: sidebar-right 2s forwards 3.5s;
+  animation: sidebar-right 2s forwards 12.5s;
 }
 
 .scrollbox-inner{
@@ -817,7 +817,7 @@ margin: auto;
   background-size: 85%;
   background-repeat: no-repeat;
 
-  animation: sidebar-down 1s forwards 5s;
+  animation: sidebar-down 1s forwards 11s;
 }
 
 .skills{
@@ -1304,7 +1304,7 @@ margin: auto;
   height: 1.2em;
   background-color: #240b41;
   border-radius: 1.5em;
-  animation: fadeIn 2s, rise 1s, fadeOut 0.3s linear 2s forwards, unrise 0.6s linear 2s forwards;
+  animation: fadeIn 2s, rise 1s, fadeOut 0.3s linear 12s forwards, unrise 0.6s linear 12s forwards;
 }
 
 .progress-bar::before{
@@ -1332,7 +1332,7 @@ margin: auto;
   background-size: cover;
   opacity: 0.8;
   filter: blur(0px);
-  animation: bg-blur 1s forwards 2s ,bg-opacity 1s forwards 2s;
+  animation: bg-blur 1s forwards 8s ,bg-opacity 1s forwards 8s;
 
 }
 

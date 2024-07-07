@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Color_Fill_1" data-name="Color Fill 1" class="cls-1" d="M159,153l8,1L500,485,831,154l2-1,8,1,6,5q-0.5,4-1,8L515,500,846,831q0.5,1,1,2-0.5,4-1,8l-5,6-8-1L500,515,169,846l-2,1-8-1-6-5q0.5-4,1-8L485,500,153,167q0.5-4,1-8Z"/>
+</svg>

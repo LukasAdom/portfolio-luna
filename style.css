@@ -1,0 +1,1444 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body::before{
+ content:
+          url(img/window.gif)
+          url(img/window2.gif)
+          url(img/window3.gif)
+          url(img/window4.gif)
+          url(img/window5.gif)
+          url(img/window6.gif)
+          url(img/window7.png)
+          url(img/window8.png)
+          
+          url(img/bg.png)
+          url(img/About\ me.png)
+          url(img/bible.png)
+          url(img/clickme.svg)
+          url(img/coming.png)
+          url(img/contacts.png)
+          url(img/feet.png)
+          url(img/frame.png)
+          url(img/logo-hover.svg)
+          url(img/luna++.svg)
+          url(img/portfolio-hover.png)
+          url(img/portfolio.svg)
+          url(img/projects.png)
+          url(img/skills.png)
+          url(img/small-proj.png)
+          url(img/page-bg.png)
+          url(img/roblox-icon-hover.png)
+          url(img/roblox-icon.png)
+          url(img/github-mark-hover.svg)
+          url(img/github-mark-white.svg)
+          url(img/aStar.png)
+          url(img/giant.png)
+          url(img/OC.png)
+          url(img/play.svg)
+          url(img/play-hover.png)
+          url(img/lunaEngine.png)
+          url(img/para.png)
+          url(img/ray.png)
+          url(img/zom.png)
+          ;
+          position: absolute;
+          top: -9999rem;
+          left: -9999rem;
+          opacity: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #1a0631;
+  background-image: linear-gradient(rgba(255,0,0,0), rgb(0, 0, 0));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: azure;
+}
+
+.noCursor{
+  cursor: none;
+}
+
+.circle{
+  pointer-events: none;
+  margin: auto;
+  position: fixed;
+  top: -15px;
+  left: -15px;
+  transform-origin: 50% 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  transform: scale(0.2);
+  opacity: 1;
+}
+
+.circle.hovering{
+  animation: black-color 0.1s forwards;
+}
+
+@keyframes black-color {
+  0% {background-color: white;}
+  100% {background-color: #C9ED77;}
+}
+
+.sub-body.once{
+  opacity: 1;
+}
+
+.sub-body.off{
+  animation: fadeIn 1s forwards;
+}
+
+
+.sub-body.on{
+  animation: fadeOut 1s forwards;
+}
+
+section{
+  position: relative;
+  display: grid;
+  place-items: left;
+  align-items: left;
+  min-height: 100vh;
+
+}
+
+canvas{
+  position: fixed;
+  top: 0%;
+  left: 84%;
+  animation: canva-left 1s forwards 3s;
+}
+
+section{
+  height: 50%;
+}
+
+
+.header-bg{
+  margin: auto;
+  position: absolute;
+  top: -10%;
+  left: 0%;
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 5em;
+  background: radial-gradient(circle, rgba(15,4,28,1) 0%, rgba(31,9,56,1) 100%);
+  opacity: 1;
+  
+}
+
+.header-bg.once{
+  animation: header-down 2s forwards 3.5s;
+
+}
+
+.header-bg.off{
+  opacity: 1;
+  top: 0%;
+}
+
+.portfolio-main{
+  margin: auto;
+  position: absolute;
+  border: none;
+  background: none;
+  cursor: none;
+  width: 10%;
+  height: 50%;
+  top: 25%;
+  left: 3%;
+  opacity: 1;
+
+}
+
+.portfolio{
+margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/portfolio.svg);
+  background-size: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  opacity: 1;
+
+}
+
+.portfolio-hover{
+  margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/portfolio-hover.png);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    opacity: 1;
+  
+  }
+
+
+.luna-main{
+  opacity: 0;
+  animation: fadeIn 0.5s forwards 3s;
+}
+
+.luna-hover{
+  margin: auto;
+  position: absolute;
+  top: 2%;
+  left: 87%;
+  transform-origin: 50% 50%;
+  width: 10%;
+  height: 5%;
+  background-image: url(img/luna++-hover.svg);
+  background-size: 80%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+.luna{
+  margin: auto;
+  position: absolute;
+  top: 2%;
+  left: 87%;
+  transform-origin: 50% 50%;
+  width: 10%;
+  height: 5%;
+  background-image: url(img/luna++.svg);
+  background-size: 80%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+.portfolio:hover{
+  animation: hover 0.25s forwards;
+
+}
+
+.luna:hover{
+  animation: hover 0.25s forwards;
+
+}
+
+.logo:hover{
+  animation: hover 0.25s forwards;
+
+}
+
+.logo-main{
+  opacity: 0;
+  animation: fadeIn 0.5s forwards 3s;
+
+}
+
+.logo{
+  margin: auto;
+  position: absolute;
+  top: 1%;
+  left: 96%;
+  transform-origin: 50% 50%;
+  width: 64px;
+  height: 64px;
+  background-image: url(img/logo.svg);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transform: scale(0.9);
+  opacity: 1;
+  
+}
+
+.logo-hover{
+  margin: auto;
+  position: absolute;
+  top: 1%;
+  left: 96%;
+  transform-origin: 50% 50%;
+  width: 64px;
+  height: 64px;
+  background-image: url(img/logo-hover.svg);
+  background-size: 90%;
+  background-repeat: no-repeat; 
+  transform: scale(0.9); 
+  opacity: 1;
+
+}
+
+.page{
+  margin: auto;
+  position: absolute;
+  top: -100%;
+  left: 0%;
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #1f0938;
+  
+  }
+
+  .img1{
+  margin: auto;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/page-bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+
+  animation: page-bg-move1 60s linear;
+    animation-iteration-count: infinite;
+  }
+
+  .img2{
+    margin: auto;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/page-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 1;
+
+    animation: page-bg-move2 60s linear;
+    animation-iteration-count: infinite;
+  }
+
+.img-handle.on{
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+
+  animation: img-op 2s forwards linear .5s;
+}
+
+  @keyframes page-bg-move1 {
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(100%);}
+  }
+
+  @keyframes page-bg-move2 {
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(0%);}
+  }
+
+  @keyframes header-op {
+    0%{opacity: 1; top: -10%}
+    100%{opacity: 0.8; top: 0%}
+  }
+
+  @keyframes img-op {
+    0%{opacity: 0;}
+    100%{opacity: 0.2;}
+  }
+
+.page-handle{
+  position: absolute;
+  height: 92%;
+  width: 100%;
+  top: 8%;
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+.page-handle.on{
+  animation: fadeIn 0.5s forwards .5s;
+}
+
+.title{
+  position: relative;
+  background-color: black;
+  width: 45%;
+  height: 20%;
+  top: 5%;
+  left: 2%;
+  border-radius: 15px;
+  opacity: 0.8;
+
+  background-image: url();
+  background-size: 90%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+}
+
+.page-thumbnail{
+  position: relative;
+  background-color:black;
+  width: 40%;
+  height: 50%;
+  top: -15%;
+  left: 50%;
+  border-radius: 15px;
+  opacity: 1;
+}
+
+.video{
+  pointer-events:none;
+  position: relative;
+  width: 95%;
+  height: 90%;
+  top: 3.5%;
+  left: 2.5%;
+  background-position: 50%;
+  border-radius: 14px;
+
+}
+
+.no-video{
+  pointer-events:none;
+  position: absolute;
+  width: 95%;
+  height: 90%;
+  top: 3.5%;
+  left: 2.5%;
+  background-position: 50%;
+  border-radius: 14px;
+}
+
+.sad-face{
+  position: relative;
+  left: 45%;
+  top: 50%;
+  font-size: large;
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  font-weight: 200;
+}
+
+.page-text{
+  position: relative;
+  background-color: black;
+  width: 45%;
+  height: 65%;
+  top: -40%;
+  left: 2%;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+.page-exit{
+  position: relative;
+  background-color: black;
+  width: 4.9%;
+  height: 10%;
+  top: -137%;
+  left: 92%;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+.page-buttons-exit{
+  position: absolute;
+  margin: auto;
+  border: none;
+  background: none;
+  pointer-events: none;
+  width: 5%;
+  height: 10%;
+  left: 92%;
+  top: 12%;
+  opacity: 0;
+}
+
+.page-buttons-exit.on{
+  cursor: none;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.exit-img{
+  position: absolute;
+  margin: auto;
+  pointer-events: none;
+  width: 5%;
+  height: 10%;
+  left: 92.2%;
+  top: 12.72%;
+  background-image: url(img/exit-hover.svg);
+  background-size: 80%;
+  background-position: 25% 25%;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.exit-img.on{
+  animation: fadeIn 0.5s forwards 0.5s;
+}
+
+.exit-img:hover{
+  transform: scale(1);
+}
+
+.OnPageText{
+  margin: 2%;
+  padding: 0%;
+  font-size: large;
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  font-weight: 200;
+}
+
+
+.page-buttons{
+  position: relative;
+  background-color: black;
+  width: 10%;
+  height: 7%;
+  top: -78%;
+  left: 50%;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+.source-code-main{
+  border: none;
+  background: none;
+  cursor: none;
+  pointer-events: none;
+  position: relative;
+  width: 30%;
+  height: 80%;
+  top: 10%;
+  left: 4%;
+
+}
+
+.source-code-main.off{
+  pointer-events: none;
+}
+
+.gitty-hub{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(img/github-mark-white.svg);
+  background-size: 70%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.gitty-hub-hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(img/github-mark-hover.svg);
+  background-size: 70%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+
+}
+
+
+.play-button-main{
+  border: none;
+  background: none;
+  cursor: none;
+  pointer-events: none;
+  position: absolute;
+  width: 30%;
+  height: 80%;
+  top: 10%;
+  left: 36%;
+
+}
+
+
+
+.play-button-main.off{
+  pointer-events: none;
+  cursor: none;
+
+}
+
+.play-button{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(img/play.svg);
+  background-size: 55%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+}
+
+.play-hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(img/play-hover.png);
+  background-size: 55%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+}
+
+
+.roblox-redirect-main{
+  border: none;
+  background: none;
+  cursor: none;
+  pointer-events: none;
+  position: absolute;
+  width: 30%;
+  height: 80%;
+  top: 10%;
+  left: 66%;
+
+
+}
+
+.roblox-redirect-main.off{
+  pointer-events: none;
+
+}
+
+.roblox-button{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(img/roblox-icon.png);
+  background-size: 75%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+}
+
+.roblox-hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(img/roblox-icon-hover.png);
+  background-size: 75%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+}
+
+.roblox-button:hover{
+  animation: hover 0.25s forwards;
+
+}
+
+.play-button:hover{
+  animation: hover 0.25s forwards;
+  
+}
+
+.gitty-hub:hover{
+  animation: hover 0.25s forwards;
+
+}
+
+.header-bg.on{
+    animation: header-op 0.5s forwards;
+  }
+
+
+.page.on{
+  animation: pageMove 0.5s forwards;
+}
+
+.page.off{
+  animation: pageMoveUp 2s forwards;
+}
+
+
+
+.sidebar{
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: -60%;
+  transform-origin: 50% 50%;
+  width: 60%;
+  height: 100%;
+  background-color: #955bd6;
+  
+  opacity: 0.35;
+  animation: sidebar-right 2s forwards 3.5s;
+
+}
+
+.sidebar-grad{
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: -60%;
+  transform-origin: 50% 50%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(15,4,28,0.2) 0%, rgba(39,49,140,0) 5%, rgba(63,94,251,0) 50%, rgba(39,49,140,0) 75%, rgba(15,4,28,1) 100%);
+  animation: sidebar-right 2s forwards 3.5s;
+
+}
+
+.sidebar-main{
+  margin: auto;
+  position: absolute;
+  top: 8.2%;
+  left: -60%;
+  transform-origin: 50% 50%;
+  width: 60%;
+  height: 91.8%;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+
+  animation: sidebar-right 2s forwards 3.5s;
+}
+
+
+.sidebar-imgs{
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+
+  
+  
+  animation: img-slider 15s linear;
+  animation-iteration-count: infinite;
+
+}
+
+.sidebar-img{
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: -60%;
+  transform-origin: 50% 50%;
+  width: 60%;
+  height: 100%;
+  background-image: url(img/bible.png);
+  
+  opacity: 0.2;
+  animation: sidebar-right 2s forwards 3.5s;
+}
+
+.sidebar-img2{
+  margin: auto;
+  position: absolute;
+  top: -100%;
+  left: -60%;
+  transform-origin: 50% 50%;
+  width: 60%;
+  height: 100%;
+  background-image: url(img/bible.png);
+  
+  opacity: 0.2;
+  animation: sidebar-right 2s forwards 3.5s;
+}
+
+.scrollbox-inner{
+  font-size: large;
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  font-weight: 100;
+
+}
+
+.txt-handle{
+  margin: auto;
+  position: absolute;
+  top: 26%;
+  left: 5%;
+  opacity: 0;
+
+  animation: fadeIn 1s forwards 4.5s;
+}
+
+.txt-handle1{
+  margin: auto;
+  position: absolute;
+  top: 57%;
+  left: 5%;
+  opacity: 0;
+
+  animation: fadeIn 1s forwards 4.5s;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: white;
+}
+
+.about-me{
+  margin: auto;
+  position: absolute;
+  top: -30%;
+  left: -5%;
+  transform-origin: 50% 50%;
+  width: 113.8182%;
+  height: 258px;
+  opacity: 1;
+  background-image: url(img/About\ me.png);  
+  background-size: 85%;
+  background-repeat: no-repeat;
+
+  animation: sidebar-down 1s forwards 5s;
+}
+
+.skills{
+  margin: auto;
+  position: absolute;
+  top: 42%;
+  left: -60%;
+  transform-origin: 50% 50%;
+  width: 113.8182%;
+  height: 258px;
+  opacity: 1;
+  background-image: url(img/skills.png);  
+  background-size: 70%;
+  background-repeat: no-repeat;
+
+  animation: skills-right 1s forwards 5s;
+}
+
+.projects{
+  margin: auto;
+  position: absolute;
+  top: 112%;
+  left: -5%;
+  transform-origin: 50% 50%;
+  width: 113.8182%;
+  height: 258px;
+  opacity: 1;
+  background-image: url(img/projects.png);  
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+
+}
+
+.feet{
+  margin: auto;
+  position: absolute;
+  top: 144%;
+  left: 0%;
+  transform-origin: 50% 50%;
+  width: 113.8182%;
+  height: 258px;
+  opacity: 1;
+  background-image: url(img/feet.png);  
+  background-size: 25%;
+  background-repeat: no-repeat;
+
+}
+
+.small{
+  margin: auto;
+  position: absolute;
+  top: 225%;
+  left: 3%;
+  transform-origin: 50% 50%;
+  width: 113.8182%;
+  height: 258px;
+  opacity: 1;
+  background-image: url(img/small-proj.png);  
+  background-size: 35%;
+  background-repeat: no-repeat;
+
+}
+
+.coming{
+  margin: auto;
+  position: absolute;
+  top: 300%;
+  left: -3%;
+  transform-origin: 50% 50%;
+  width: 113.8182%;
+  height: 258px;
+  opacity: 1;
+  background-image: url(img/coming.png);  
+  background-size: 35%;
+  background-repeat: no-repeat;
+
+
+}
+
+.handle{
+  margin: auto;
+  position: absolute;
+  top: 27%;
+  left: 5%;
+  width: 90%;
+  height: 65%;
+  opacity: 0;
+
+  animation: fadeIn 1s forwards 4.5s;
+
+}
+
+.handle2{
+  margin: auto;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 65%;
+  opacity: 0;
+
+  animation: fadeIn 1s forwards 4.5s;
+
+}
+
+.handle3{
+  margin: auto;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 65%;
+  opacity: 0;
+
+  animation: fadeIn 1s forwards 4.5s;
+
+}
+
+.proj{
+  margin: auto;
+  position: absolute;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  width: 25%;
+  height: 70%;
+  left: 10%;
+  top: 25%;
+  border: none;
+    background: none;
+    cursor: none;
+  background-image: url(img/frame.png);
+  background-size: 100%;
+
+}
+
+
+.proj2{
+  margin: auto;
+  position: absolute;
+  width: 25%;
+  height: 70%;
+  left: 38%;
+  top: 25%;
+  border: none;
+    background: none;
+    cursor: none;
+  background-image: url(img/frame.png);
+  background-size: 100%;
+
+}
+
+.proj3{
+  margin: auto;
+  position: absolute;
+  width: 25%;
+  height: 70%;
+  left: 66%;
+  top: 25%;
+  border: none;
+    background: none;
+    cursor: none;
+  background-image: url(img/frame.png);
+  background-size: 100%;
+
+}
+
+.proj4{
+  margin: auto;
+  position: absolute;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  width: 25%;
+  height: 70%;
+  left: 10%;
+  top: 25%;
+  border: none;
+    background: none;
+    cursor: none;
+  background-image: url(img/frame.png);
+  background-size: 100%;
+
+}
+
+.proj5{
+  margin: auto;
+  position: absolute;
+  width: 25%;
+  height: 70%;
+  left: 38%;
+  top: 25%;
+  border: none;
+    background: none;
+    cursor: none;
+  background-image: url(img/frame.png);
+  background-size: 100%;
+
+}
+
+.proj6{
+  margin: auto;
+  position: absolute;
+  width: 25%;
+  height: 70%;
+  left: 66%;
+  top: 25%;
+  border: none;
+    background: none;
+    cursor: none;
+  background-image: url(img/frame.png);
+  background-size: 100%;
+
+}
+
+.proj7{
+  margin: auto;
+  position: absolute;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  width: 25%;
+  height: 70%;
+  left: 10%;
+  top: -25%;
+  border: none;
+    background: none;
+    cursor: none;
+  background-image: url(img/frame.png);
+  background-size: 100%;
+
+}
+
+.proj8{
+  margin: auto;
+  position: absolute;
+  width: 25%;
+  height: 70%;
+  left: 38%;
+  top: -25%;
+  border: none;
+    background: none;
+    cursor: none;
+  background-image: url(img/frame.png);
+  background-size: 100%;
+
+}
+
+.window1{
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 83%;
+  border-radius: 10px;
+  background: url(img/window.gif);
+  background-position: 50%;
+  filter: blur(5px);
+  opacity: 1;
+
+}
+
+.window2{
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 83%;
+  border-radius: 10px;
+  background: url(img/window2.gif);
+  background-position: 47%;
+  filter: blur(5px);
+
+}
+
+.window3{
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 83%;
+  border-radius: 10px;
+  background: url(img/window3.gif);
+  background-position: 50%;
+  filter: blur(5px);
+
+}
+
+.window4{
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 83%;
+  border-radius: 10px;
+  background: url(img/window4.gif);
+  background-size: 320%;
+  background-position: 50% 1000%;
+  filter: blur(5px);
+
+}
+
+.window5{
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 83%;
+  border-radius: 10px;
+  background: url(img/window5.gif);
+  background-position: 28%;
+  filter: blur(5px);
+
+}
+
+.window6{
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 83%;
+  border-radius: 10px;
+  background: url(img/window6.gif);
+  background-position: 50%;
+  filter: blur(5px);
+
+}
+
+.window7{
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 83%;
+  border-radius: 10px;
+  background: url(img/window7.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  filter: blur(5px);
+
+  animation: spin 10s linear;
+  animation-iteration-count: infinite;
+
+}
+
+.window8{
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 83%;
+  border-radius: 10px;
+  background: url(img/window8.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  filter: blur(5px);
+
+  animation: spin 10s linear;
+  animation-iteration-count: infinite;
+
+}
+
+.clickme{
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  top: -46%;
+  left: -39%;
+  border-radius: 10px;
+  background: url(img/clickme.svg);
+  background-size: 25%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  opacity: 1;
+
+  animation: clickme 1s linear;
+  animation-iteration-count: infinite;
+}
+
+.clickme:hover{
+  animation: fadeIn 0.5s forwards;
+}
+
+.proj:hover{
+  animation: window-hover 0.5s forwards;
+}
+
+.window1:hover{
+  animation: blur 0.5s forwards;
+}
+
+.proj2:hover{
+  animation: window-hover 0.5s forwards;
+}
+
+.window2:hover{
+  animation: blur 0.5s forwards;
+}
+
+.proj3:hover{
+  animation: window-hover 0.5s forwards;
+}
+
+.window3:hover{
+  animation: blur 0.5s forwards;
+}
+
+.proj4:hover{
+  animation: window-hover 0.5s forwards;
+}
+
+.window4:hover{
+  animation: blur 0.5s forwards;
+}
+
+.proj5:hover{
+  animation: window-hover 0.5s forwards;
+}
+
+.window5:hover{
+  animation: blur 0.5s forwards;
+}
+
+.proj6:hover{
+  animation: window-hover 0.5s forwards;
+}
+
+.window6:hover{
+  animation: blur 0.5s forwards;
+}
+
+.proj7:hover{
+  animation: window-hover 0.5s forwards;
+}
+
+.window7:hover{
+  animation: blur 0.5s forwards;
+}
+
+.proj8:hover{
+  animation: window-hover 0.5s forwards;
+}
+
+.window8:hover{
+  animation: blur 0.5s forwards;
+}
+
+.contacts{
+  margin: auto;
+  position: absolute;
+  top: 73%;
+  left: 0%;
+  transform-origin: 50% 50%;
+  width: 113.8182%;
+  height: 258px;
+  opacity: 1;
+  background-image: url(img/contacts.png);  
+  background-size: 40%;
+  background-repeat: no-repeat;
+
+}
+
+.contacts-handle{
+  margin: auto;
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  opacity: 0;
+
+  animation: fadeIn 1s forwards 4.5s;
+
+}
+
+.progress-bar {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 1.2em;
+  background-color: #240b41;
+  border-radius: 1.5em;
+  animation: fadeIn 2s, rise 1s, fadeOut 0.3s linear 2s forwards, unrise 0.6s linear 2s forwards;
+}
+
+.progress-bar::before{
+  content: '';
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0.1em;
+  top: 0.1em;
+  bottom: 0.1em;
+  animation: progress-anim 2s forwards;
+  min-width: 1rem;
+  max-width: calc(100% - 0.2em);
+  background-color: white;
+  border-radius: 1em;
+}
+
+.background{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/bg.png);
+  background-size: cover;
+  opacity: 0.8;
+  filter: blur(0px);
+  animation: bg-blur 1s forwards 2s ,bg-opacity 1s forwards 2s;
+
+}
+
+
+@keyframes spin {
+  0% {transform: rotate(0deg);} 
+  100% {transform: rotate(360deg);} 
+}
+
+@keyframes clickme {
+  0% {filter: hue-rotate(0deg);}
+  100% {filter: hue-rotate(359deg);}
+}
+
+@keyframes blur {
+  0% {filter: blur(10px);}
+  100% {filter: blur(0px);}
+}
+
+@keyframes window-hover {
+  0% {transform: scale(1); filter: hue-rotate(0deg);}
+    100% {transform: scale(1.2); filter: hue-rotate(280deg);}
+}
+
+  @keyframes skills-right {
+    0% {left: -60%;}
+    100% {left: -16%;}
+  }
+
+  @keyframes img-slider {
+    0% {top: 0%}
+    100% {top: 100%}
+  }
+
+  @keyframes hover {
+    0% {transform: scale(1); opacity: 1;}
+    100% {transform: scale(1.2); opacity: 0;}
+  }
+
+  @keyframes progress-anim {
+    0% {width: 0.1em;}
+    100% {width: calc(100% - 0.2em);}
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  @keyframes rise {
+    0% { transform:translate(-50%,300%); }
+    100% { transform:translate(-50%,-50%); }
+  }
+
+  @keyframes unrise {
+    0% { transform:translate(-50%,-50%); }
+    100% { transform:translate(-50%,500%); }
+  }
+
+  @keyframes header-down {
+    0% {top: -10%;}   
+    100% {top: 0%;} 
+  }
+
+  @keyframes down {
+    0% {top: -10%;}   
+    100% {top: 0%;}   
+  }
+
+  @keyframes sidebar-right {
+    0% {left: -60%;}   
+    100% {left: 0%;}   
+  }
+
+  @keyframes sidebar-down {
+    0% {top: -30%;;}   
+    100% {top: 5%;;}   
+  }
+
+  @keyframes canva-left {
+    0% {left: 84%;}
+    100% {left: 32%;}
+  }
+
+  @keyframes bg-opacity {
+    0% { opacity: 0.8; }
+    100% { opacity: 0.5; }
+  }
+
+  @keyframes bg-blur {
+    0% {filter: blur(0px);}
+    100% {filter: blur(5px);}
+  }
+
+@keyframes pageMove {
+  0% {top: -100%; opacity: 0;}
+    100% {top: 0%; opacity: 1;}
+}
+
+@keyframes pageMoveUp {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+

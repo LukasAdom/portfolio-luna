@@ -1,10 +1,4 @@
 
-
-import dns from 'node:dns'
-
-dns.setDefaultResultOrder('verbatim')
-
-
 /* //////// */
 /* just imports  */
 /* //////// */

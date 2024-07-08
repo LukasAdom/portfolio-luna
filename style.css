@@ -141,7 +141,7 @@ section{
 }
 
 .header-bg.once{
-  animation: header-down 2s forwards 8.5s;
+  animation: header-down 2s forwards;
 
 }
 

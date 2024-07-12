@@ -1,71 +1,4 @@
 
-/* //////// */
-/* just imports  */
-/* //////// */
-
-
-import * as THREE from 'three';
-import $ from "jquery";
-
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-
-
-/* //////// */
-/* WebGL */
-/* //////// */
-
-
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight,0.1,100);
-
-const renderer = new THREE.WebGLRenderer({
-    canvas: document.querySelector('#bg'),
-    alpha: true,
-})
-
-renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight);
-camera.position.setZ(10);
-camera.rotation.y = 90 * Math.PI / 180
-
-const gltfLoader = new GLTFLoader();
-gltfLoader.load('./assets/scene.gltf', (gltfScene) => {
-
-    gltfScene.scene.position.y = 0;
-    gltfScene.scene.position.x = 0;
-    gltfScene.scene.position.z = 2;
-    gltfScene.scene.rotation.y = 3;
-
-    renderer.render(gltfScene.scene, camera);
-
-    const orbitControl = new OrbitControls(camera, renderer.domElement);
-    orbitControl.enableZoom = false;
-    orbitControl.enablePan = false;
-    orbitControl.enableRotate = false;
-
-const ambientLight = new THREE.AmbientLight(0xf0fcea);
-  gltfScene.scene.add(ambientLight);
-
-function animate(){
-    requestAnimationFrame( animate );
-
-   gltfScene.scene.rotation.y += 0.005;
-   gltfScene.scene.rotation.x += 0.0025;
-    orbitControl.update();
-    renderer.render(gltfScene.scene, camera);
-}
-
-animate();
-
-});
-
-
-/* //////// */
-/* Exit code */
-/* //////// */
-
-
 const getClass = document.querySelectorAll('.proj,.proj2,.proj3,.proj4,.proj5,.proj6,.proj7,.proj8');
 const exitClass = document.querySelectorAll('.page-buttons-exit');
 const getPortfolioClass = document.querySelector('.portfolio-main')
@@ -116,6 +49,13 @@ function clicked(){
 
     getPortfolioClass.classList.add('on');
 
+    document.querySelector('.page-layer-handle3').classList.add('on');
+    document.querySelector('.page-layer-handle2').classList.add('on');
+    document.querySelector('.page-layer-handle').classList.add('on');
+
+    document.querySelector('.page-layer-handle3').classList.remove('off');
+    document.querySelector('.page-layer-handle2').classList.remove('off');
+    document.querySelector('.page-layer-handle').classList.remove('off');
 
 }
 
@@ -137,6 +77,15 @@ function exitclass(){
     document.querySelector('.page-buttons-exit').classList.remove('on');
     document.querySelector('.exit-img').classList.remove('on');
 
+
+    document.querySelector('.page-layer-handle3').classList.add('off');
+    document.querySelector('.page-layer-handle2').classList.add('off');
+    document.querySelector('.page-layer-handle').classList.add('off');
+
+
+    document.querySelector('.page-layer-handle3').classList.remove('on');
+    document.querySelector('.page-layer-handle2').classList.remove('on');
+    document.querySelector('.page-layer-handle').classList.remove('on');
 
 
     document.getElementById("txt1").textContent="";
@@ -206,6 +155,14 @@ function exitclassPortfolio(){
         document.querySelector('.roblox-redirect-main').style.pointerEvents = "none";
 
 
+        document.querySelector('.page-layer-handle3').classList.add('off');
+        document.querySelector('.page-layer-handle2').classList.add('off');
+        document.querySelector('.page-layer-handle').classList.add('off');
+
+        document.querySelector('.page-layer-handle3').classList.remove('on');
+        document.querySelector('.page-layer-handle2').classList.remove('on');
+        document.querySelector('.page-layer-handle').classList.remove('on');
+
     };
 };
 
@@ -221,9 +178,9 @@ const changePageContent = e => {
 
         document.querySelector('.no-video').style.opacity = 0;
 
-        document.querySelector('.github-link').href = '';
-        document.querySelector('.source-code-main').style.opacity = 0;
-        document.querySelector('.source-code-main').style.pointerEvents = "none";
+        document.querySelector('.github-link').href = 'https://github.com/LukasAdom/it_screams';
+        document.querySelector('.source-code-main').style.opacity = 1;
+        document.querySelector('.source-code-main').style.pointerEvents = "all";
 
         document.querySelector('.play-link').href = 'https://www.roblox.com/games/17624062749/It-Screams';
         document.querySelector('.play-button-main').style.opacity = 1;
@@ -261,32 +218,8 @@ const changePageContent = e => {
 
     }
 
+
     if(e.target == document.querySelector('.window3') || e.target == document.querySelector('.proj3') == true){
-        
-        document.getElementById("txt1").textContent="One of the first ever big projects I've worked on. However, since this was my first big project, I made a ton of mistakes from which I learned. I hadn't planned anything when first starting this project that mistake would be the sole reason why I couldn't finish my game. My game was simply too ambitious, it would be nearly impossible for a single developer to create all the features, story elements, and gameplay elements that I imagined my game would have, which later caused me to burn out and lose the drive and motivation to continue further developing my game. But other than that \"Giant Simulator\" has an appealing aesthetic to it. I play this game from time to time just to check out how well my game aged, and each time I played, I was impressed by how smoothly everything was. Overall I enjoyed the time I've spent building this, unfortunately, my ideas were too ambitious for them to be properly integrated.";
-        document.querySelector('.title').style.backgroundImage = "url(img/giant.png)";
-
-        document.querySelector('.yt').contentWindow.location.replace('yt-videos/yt-video3.html');
-        document.querySelector('.yt').style.opacity = 1;
-
-        document.querySelector('.no-video').style.opacity = 0;
-
-        document.querySelector('.github-link').href = 'https://github.com/LukasAdom/Giant-Simulator-Beta-';
-        document.querySelector('.source-code-main').style.opacity = 1;
-        document.querySelector('.source-code-main').style.pointerEvents = "all";
-
-        document.querySelector('.play-link').href = 'https://www.roblox.com/games/4474368970/Giant-Simulator-BETA';
-        document.querySelector('.play-button-main').style.opacity = 1;
-        document.querySelector('.play-button-main').style.pointerEvents = "all";
-
-
-        document.querySelector('.roblox-link').href = '';
-        document.querySelector('.roblox-redirect-main').style.opacity = 0;
-        document.querySelector('.roblox-redirect-main').style.pointerEvents = "none";
-
-    }
-
-    if(e.target == document.querySelector('.window4') || e.target == document.querySelector('.proj4') == true){
         
         document.getElementById("txt1").textContent="This was my favorite yet the most frustrating project to work on so far. The reason why I programmed ray tracing into Roblox was to get my gears running smoothly since I hadn't written Luau code in a long time. How this works is by creating an array of 1x1 frames and placing them across the entire screen, making them act like pixels. I would later rasterize an image using raycasts that were fired from the camera, and later I would write the main ray-casting function. How It would work was the camera would shoot a ray and if the ray hits an object that has a reflective property, It would bounce off the object in a random direction that was appointed by a random point on a hemisphere. And it would continue for several iterations until it returns all the color data back to the camera. For the color data, I had to convert everything to CIELUV to get more accurate colors, which was a pain in the ass to code. Not to mention  I had exams coming up while I was writing all of this.";
         document.querySelector('.title').style.backgroundImage = "url(img/ray.png)";
@@ -311,6 +244,60 @@ const changePageContent = e => {
 
 
     }
+
+
+    if(e.target == document.querySelector('.window4') || e.target == document.querySelector('.proj4') == true){
+        
+        document.getElementById("txt1").textContent="One of the first ever big projects I've worked on. However, since this was my first big project, I made a ton of mistakes from which I learned. I hadn't planned anything when first starting this project that mistake would be the sole reason why I couldn't finish my game. My game was simply too ambitious, it would be nearly impossible for a single developer to create all the features, story elements, and gameplay elements that I imagined my game would have, which later caused me to burn out and lose the drive and motivation to continue further developing my game. But other than that \"Giant Simulator\" has an appealing aesthetic to it. I play this game from time to time just to check out how well my game aged, and each time I played, I was impressed by how smoothly everything was. Overall I enjoyed the time I've spent building this, unfortunately, my ideas were too ambitious for them to be properly integrated.";
+        document.querySelector('.title').style.backgroundImage = "url(img/giant.png)";
+
+        document.querySelector('.yt').contentWindow.location.replace('yt-videos/yt-video3.html');
+        document.querySelector('.yt').style.opacity = 1;
+
+        document.querySelector('.no-video').style.opacity = 0;
+
+        document.querySelector('.github-link').href = 'https://github.com/LukasAdom/Giant-Simulator-Beta-';
+        document.querySelector('.source-code-main').style.opacity = 1;
+        document.querySelector('.source-code-main').style.pointerEvents = "all";
+
+        document.querySelector('.play-link').href = 'https://www.roblox.com/games/4474368970/Giant-Simulator-BETA';
+        document.querySelector('.play-button-main').style.opacity = 1;
+        document.querySelector('.play-button-main').style.pointerEvents = "all";
+
+
+        document.querySelector('.roblox-link').href = '';
+        document.querySelector('.roblox-redirect-main').style.opacity = 0;
+        document.querySelector('.roblox-redirect-main').style.pointerEvents = "none";
+
+    }
+
+
+    /* 
+    
+    if(e.target == document.querySelector('.window3') || e.target == document.querySelector('.proj3') == true){
+        
+        document.getElementById("txt1").textContent="One of the first ever big projects I've worked on. However, since this was my first big project, I made a ton of mistakes from which I learned. I hadn't planned anything when first starting this project that mistake would be the sole reason why I couldn't finish my game. My game was simply too ambitious, it would be nearly impossible for a single developer to create all the features, story elements, and gameplay elements that I imagined my game would have, which later caused me to burn out and lose the drive and motivation to continue further developing my game. But other than that \"Giant Simulator\" has an appealing aesthetic to it. I play this game from time to time just to check out how well my game aged, and each time I played, I was impressed by how smoothly everything was. Overall I enjoyed the time I've spent building this, unfortunately, my ideas were too ambitious for them to be properly integrated.";
+        document.querySelector('.title').style.backgroundImage = "url(img/giant.png)";
+
+        document.querySelector('.yt').contentWindow.location.replace('yt-videos/yt-video3.html');
+        document.querySelector('.yt').style.opacity = 1;
+
+        document.querySelector('.no-video').style.opacity = 0;
+
+        document.querySelector('.github-link').href = 'https://github.com/LukasAdom/Giant-Simulator-Beta-';
+        document.querySelector('.source-code-main').style.opacity = 1;
+        document.querySelector('.source-code-main').style.pointerEvents = "all";
+
+        document.querySelector('.play-link').href = 'https://www.roblox.com/games/4474368970/Giant-Simulator-BETA';
+        document.querySelector('.play-button-main').style.opacity = 1;
+        document.querySelector('.play-button-main').style.pointerEvents = "all";
+
+
+        document.querySelector('.roblox-link').href = '';
+        document.querySelector('.roblox-redirect-main').style.opacity = 0;
+        document.querySelector('.roblox-redirect-main').style.pointerEvents = "none";
+
+    */
 
 
     if(e.target == document.querySelector('.window5') || e.target == document.querySelector('.proj5') == true){
@@ -435,10 +422,14 @@ getPortfolioClass.addEventListener('click', exitclassPortfolio)
 /* Pointer code */
 /* //////// */
 
+const bg = document.querySelector('.background');
 
 window.addEventListener('mousemove', (e) => {
     mousePosition.x = e.x;
     mousePosition.y = e.y;
+
+    bg.style.backgroundPositionX = -e.x * 0.05 + "px" ;
+    bg.style.backgroundPositionY = -e.y * 0.05 + "px" ;
 });
 
 const cursorClass = document.querySelector('.circle');
@@ -471,7 +462,7 @@ function tick(){
     mousePositionBeforeFrame.x = mousePosition.x;
     mousePositionBeforeFrame.y = mousePosition.y;
 
-    const velocity = Math.min(Math.sqrt(deltaMouseX**2 + deltaMouseY**2) * 12, 150); 
+    const velocity = Math.min(Math.sqrt(deltaMouseX**2 + deltaMouseY**2) * 4.5, 150); 
     const Value = (velocity / 150) * 0.5;
 
     currentSize += (Value - currentSize) * spd
@@ -494,7 +485,6 @@ function tick(){
 tick();
 
 
-
 const getbuttonClass = document.querySelectorAll('#vis')
 
 getbuttonClass.forEach(getbutton => {
@@ -508,4 +498,34 @@ getbuttonClass.forEach(getbutton => {
         cursorClass.classList.remove('hovering')
     })
 });
+
+
+/* Check if user is on mobile */
+
+var hasTouchScreen = false;
+
+if ("maxTouchPoints" in navigator) {
+    hasTouchScreen = navigator.maxTouchPoints > 0;
+} else if ("msMaxTouchPoints" in navigator) {
+    hasTouchScreen = navigator.msMaxTouchPoints > 0;
+} else {
+    var mQ = window.matchMedia && matchMedia("(pointer:coarse)");
+    if (mQ && mQ.media === "(pointer:coarse)") {
+        hasTouchScreen = !!mQ.matches;
+    } else if ('orientation' in window) {
+        hasTouchScreen = true;
+    } else {
+       
+        var UA = navigator.userAgent;
+        hasTouchScreen = (
+            /\b(BlackBerry|webOS|iPhone|IEMobile)\b/i.test(UA) ||
+            /\b(Android|Windows Phone|iPad|iPod)\b/i.test(UA)
+        );
+    }
+}
+
+if (hasTouchScreen){
+    document.querySelector('.mobile-block').classList.add('mobile');
+    document.querySelector('.mobile-text-block').classList.add('mobile');
+}
 

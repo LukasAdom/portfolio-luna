@@ -119,7 +119,7 @@ canvas{
   position: fixed;
   top: 0%;
   left: 84%;
-  animation: canva-left 1s forwards 12.5s;
+  animation: canva-left 1s forwards 9.5s;
 }
 
 section{
@@ -141,7 +141,7 @@ section{
 }
 
 .header-bg.once{
-  animation: header-down 2s forwards;
+  animation: header-down 2s forwards 9s;
 
 }
 
@@ -203,7 +203,7 @@ margin: auto;
 
 .luna-main{
   opacity: 0;
-  animation: fadeIn 0.5s forwards 9s;
+  animation: fadeIn 0.5s forwards 7.5s;
 }
 
 .luna-hover{
@@ -255,7 +255,7 @@ margin: auto;
 
 .logo-main{
   opacity: 0;
-  animation: fadeIn 0.5s forwards 9s;
+  animation: fadeIn 0.5s forwards 7.5s;
 
 }
 
@@ -407,10 +407,10 @@ margin: auto;
 .video{
   pointer-events:none;
   position: relative;
-  width: 95%;
-  height: 90%;
-  top: 3.5%;
-  left: 2.5%;
+  width: 98%;
+  height: 98%;
+  top: 2%;
+  left: 1%;
   background-position: 50%;
   border-radius: 14px;
 
@@ -516,7 +516,7 @@ margin: auto;
   background-color: black;
   width: 10%;
   height: 7%;
-  top: -78%;
+  top: -70%;
   left: 50%;
   border-radius: 15px;
   opacity: 0.8;
@@ -694,7 +694,7 @@ margin: auto;
   background-color: #955bd6;
   
   opacity: 0.35;
-  animation: sidebar-right 2s forwards 12.5s;
+  animation: sidebar-right 2s forwards 9.5s;
 
 }
 
@@ -707,7 +707,7 @@ margin: auto;
   width: 60%;
   height: 100%;
   background: linear-gradient(0deg, rgba(15,4,28,0.2) 0%, rgba(39,49,140,0) 5%, rgba(63,94,251,0) 50%, rgba(39,49,140,0) 75%, rgba(15,4,28,1) 100%);
-  animation: sidebar-right 2s forwards 12.5s;
+  animation: sidebar-right 2s forwards 9.5s;
 
 }
 
@@ -723,7 +723,199 @@ margin: auto;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 
-  animation: sidebar-right 2s forwards 12.5s;
+  animation: sidebar-right 2s forwards 9.5s;
+}
+
+.layer1{
+ position: absolute;
+  height: 50%;
+  width: 25%;
+  top: 25%;
+  left: 68.5%;
+  background-image: url(img/layer-3.png);
+  background-position: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+
+}
+
+.layer1-handle{
+  position: absolute;
+  height: 200%;
+  width: 100%;
+  top: -50%;
+  left: 45%;
+  opacity: 0.8;
+
+  animation: popin1 1s forwards 11.66s;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.layer2{
+  position: absolute;
+  height: 50%;
+  width: 25%;
+  top: 25%;
+  left: 68.5%;
+  background-image: url(img/layer-2.png);
+  background-position: 50%;
+  background-size: 100%;
+
+  animation: img-rotate 15s linear;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+
+}
+
+.layer2-handle{
+  position: absolute;
+  height: 200%;
+  width: 100%;
+  top: -50%;
+  left: 45%;
+  opacity: 0.7;
+
+  animation: popin1 1s forwards 11.58s;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.layer3{
+  position: absolute;
+  height: 50%;
+  width: 25%;
+  top: 25%;
+  left: 68.5%;
+  background-image: url(img/layer-1.png);
+  background-position: 50%;
+  background-size: 100%;
+
+  animation: img-rotate2 25s linear;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+
+}
+
+.layer3-handle{
+  position: absolute;
+  height: 200%;
+  width: 100%;
+  top: -50%;
+  left: 45%;
+  opacity: 0.7;
+
+  animation: popin1 1s forwards 11.5s;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+
+.page-layer-handle{
+  position: absolute;
+  top: 100%;
+  left: 70%;
+  width: 40%;
+  height: 80%;
+  opacity: 0.5;
+
+}
+
+.page-layer-handle.on{
+  animation: popin2 1s forwards 0.5s;
+
+}
+
+.sublayer1{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/layer-3.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+}
+
+.page-layer-handle2{
+  position: absolute;
+  top: 100%;
+  left: 70%;
+  width: 40%;
+  height: 80%;
+  opacity: 0.8;
+
+}
+
+.page-layer-handle2.on{
+  animation: popin2 1s forwards 0.25s;
+
+}
+
+.sublayer2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/layer-2.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+
+ animation: img-rotate2 30s linear;
+  animation-iteration-count: infinite;
+}
+
+.page-layer-handle3{
+  position: absolute;
+  top: 100%;
+  left: 70%;
+  width: 40%;
+  height: 80%;
+  opacity: 0.7;
+
+}
+
+.page-layer-handle3.on{
+  animation: popin2 1s forwards;
+
+}
+
+
+.sublayer3{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/layer-1.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+  animation: img-rotate 30s linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes popin2 {
+  0%{top: 100%;}
+  100%{top: 50%;}
+}
+
+
+@keyframes popin1 {
+  0%{left: 45%;}
+  100%{left: 0%;}
+}
+
+@keyframes img-rotate {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@keyframes img-rotate2 {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(-360deg);}
 }
 
 
@@ -753,7 +945,7 @@ margin: auto;
   background-image: url(img/bible.png);
   
   opacity: 0.2;
-  animation: sidebar-right 2s forwards 12.5s;
+  animation: sidebar-right 2s forwards 9.5s;
 }
 
 .sidebar-img2{
@@ -767,7 +959,7 @@ margin: auto;
   background-image: url(img/bible.png);
   
   opacity: 0.2;
-  animation: sidebar-right 2s forwards 12.5s;
+  animation: sidebar-right 2s forwards 9.5s;
 }
 
 .scrollbox-inner{
@@ -781,7 +973,7 @@ margin: auto;
 .txt-handle{
   margin: auto;
   position: absolute;
-  top: 26%;
+  top: 30%;
   left: 5%;
   opacity: 0;
 
@@ -791,7 +983,7 @@ margin: auto;
 .txt-handle1{
   margin: auto;
   position: absolute;
-  top: 57%;
+  top: 60%;
   left: 5%;
   opacity: 0;
 
@@ -813,13 +1005,13 @@ margin: auto;
   left: -5%;
   transform-origin: 50% 50%;
   width: 113.8182%;
-  height: 258px;
+  height: 25%;
   opacity: 1;
   background-image: url(img/About\ me.png);  
   background-size: 85%;
   background-repeat: no-repeat;
 
-  animation: sidebar-down 1s forwards 11s;
+  animation: sidebar-down 1s forwards 10.1s;
 }
 
 .skills{
@@ -829,13 +1021,13 @@ margin: auto;
   left: -60%;
   transform-origin: 50% 50%;
   width: 113.8182%;
-  height: 258px;
+  height: 25%;
   opacity: 1;
   background-image: url(img/skills.png);  
   background-size: 70%;
   background-repeat: no-repeat;
 
-  animation: skills-right 1s forwards 5s;
+  animation: skills-right 1s forwards 10.6s;
 }
 
 .projects{
@@ -845,7 +1037,7 @@ margin: auto;
   left: -5%;
   transform-origin: 50% 50%;
   width: 113.8182%;
-  height: 258px;
+  height: 29%;
   opacity: 1;
   background-image: url(img/projects.png);  
   background-size: 100%;
@@ -861,7 +1053,7 @@ margin: auto;
   left: 0%;
   transform-origin: 50% 50%;
   width: 113.8182%;
-  height: 258px;
+  height: 25%;
   opacity: 1;
   background-image: url(img/feet.png);  
   background-size: 25%;
@@ -876,7 +1068,7 @@ margin: auto;
   left: 3%;
   transform-origin: 50% 50%;
   width: 113.8182%;
-  height: 258px;
+  height: 25%;
   opacity: 1;
   background-image: url(img/small-proj.png);  
   background-size: 35%;
@@ -891,7 +1083,7 @@ margin: auto;
   left: -3%;
   transform-origin: 50% 50%;
   width: 113.8182%;
-  height: 258px;
+  height: 25%;
   opacity: 1;
   background-image: url(img/coming.png);  
   background-size: 35%;
@@ -943,7 +1135,6 @@ margin: auto;
   margin: auto;
   position: absolute;
   overflow: hidden;
-  background-repeat: no-repeat;
   width: 25%;
   height: 70%;
   left: 10%;
@@ -953,6 +1144,7 @@ margin: auto;
     cursor: none;
   background-image: url(img/frame.png);
   background-size: 100%;
+  background-repeat: no-repeat;
 
 }
 
@@ -960,6 +1152,7 @@ margin: auto;
 .proj2{
   margin: auto;
   position: absolute;
+  overflow: hidden;
   width: 25%;
   height: 70%;
   left: 38%;
@@ -969,12 +1162,14 @@ margin: auto;
     cursor: none;
   background-image: url(img/frame.png);
   background-size: 100%;
+  background-repeat: no-repeat;
 
 }
 
 .proj3{
   margin: auto;
   position: absolute;
+  overflow: hidden;
   width: 25%;
   height: 70%;
   left: 66%;
@@ -984,6 +1179,7 @@ margin: auto;
     cursor: none;
   background-image: url(img/frame.png);
   background-size: 100%;
+  background-repeat: no-repeat;
 
 }
 
@@ -1001,12 +1197,15 @@ margin: auto;
     cursor: none;
   background-image: url(img/frame.png);
   background-size: 100%;
+  background-repeat: no-repeat;
 
 }
 
 .proj5{
   margin: auto;
   position: absolute;
+  overflow: hidden;
+  background-repeat: no-repeat;
   width: 25%;
   height: 70%;
   left: 38%;
@@ -1016,12 +1215,15 @@ margin: auto;
     cursor: none;
   background-image: url(img/frame.png);
   background-size: 100%;
+  background-repeat: no-repeat;
 
 }
 
 .proj6{
   margin: auto;
   position: absolute;
+  overflow: hidden;
+  background-repeat: no-repeat;
   width: 25%;
   height: 70%;
   left: 66%;
@@ -1031,6 +1233,7 @@ margin: auto;
     cursor: none;
   background-image: url(img/frame.png);
   background-size: 100%;
+  background-repeat: no-repeat;
 
 }
 
@@ -1048,12 +1251,15 @@ margin: auto;
     cursor: none;
   background-image: url(img/frame.png);
   background-size: 100%;
+  background-repeat: no-repeat;
 
 }
 
 .proj8{
   margin: auto;
   position: absolute;
+  overflow: hidden;
+  background-repeat: no-repeat;
   width: 25%;
   height: 70%;
   left: 38%;
@@ -1063,6 +1269,7 @@ margin: auto;
     cursor: none;
   background-image: url(img/frame.png);
   background-size: 100%;
+  background-repeat: no-repeat;
 
 }
 
@@ -1070,6 +1277,7 @@ margin: auto;
   margin: auto;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
   width: 80%;
   height: 83%;
   border-radius: 10px;
@@ -1077,6 +1285,7 @@ margin: auto;
   background-position: 50%;
   filter: blur(5px);
   opacity: 1;
+  background-repeat: no-repeat;
 
 }
 
@@ -1084,12 +1293,14 @@ margin: auto;
   margin: auto;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
   width: 80%;
   height: 83%;
   border-radius: 10px;
   background: url(img/window2.gif);
   background-position: 47%;
   filter: blur(5px);
+  background-repeat: no-repeat;
 
 }
 
@@ -1097,12 +1308,14 @@ margin: auto;
   margin: auto;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
   width: 80%;
   height: 83%;
   border-radius: 10px;
-  background: url(img/window3.gif);
-  background-position: 50%;
+  background: url(img/window4.gif);
+  background-position: 50% 100%;
   filter: blur(5px);
+  background-repeat: no-repeat;
 
 }
 
@@ -1110,13 +1323,14 @@ margin: auto;
   margin: auto;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
   width: 80%;
   height: 83%;
   border-radius: 10px;
-  background: url(img/window4.gif);
-  background-size: 320%;
-  background-position: 50% 1000%;
+  background: url(img/window3.gif);
+  background-position: 50%;
   filter: blur(5px);
+  background-repeat: no-repeat;
 
 }
 
@@ -1124,12 +1338,14 @@ margin: auto;
   margin: auto;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
   width: 80%;
   height: 83%;
   border-radius: 10px;
   background: url(img/window5.gif);
   background-position: 28%;
   filter: blur(5px);
+  background-repeat: no-repeat;
 
 }
 
@@ -1137,12 +1353,14 @@ margin: auto;
   margin: auto;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
   width: 80%;
   height: 83%;
   border-radius: 10px;
   background: url(img/window6.gif);
   background-position: 50%;
   filter: blur(5px);
+  background-repeat: no-repeat;
 
 }
 
@@ -1150,6 +1368,7 @@ margin: auto;
   margin: auto;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
   width: 80%;
   height: 83%;
   border-radius: 10px;
@@ -1158,6 +1377,7 @@ margin: auto;
   background-repeat: no-repeat;
   background-position: 50%;
   filter: blur(5px);
+  background-repeat: no-repeat;
 
   animation: spin 10s linear;
   animation-iteration-count: infinite;
@@ -1168,6 +1388,7 @@ margin: auto;
   margin: auto;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
   width: 80%;
   height: 83%;
   border-radius: 10px;
@@ -1306,7 +1527,7 @@ margin: auto;
   height: 1.2em;
   background-color: #240b41;
   border-radius: 1.5em;
-  animation: fadeIn 2s, rise 1s, fadeOut 0.3s linear 12s forwards, unrise 0.6s linear 12s forwards;
+  animation: fadeIn 2s, rise 1s, fadeOut 0.3s linear 8.5s forwards, unrise 0.6s linear 8.5s forwards;
 }
 
 .progress-bar::before{
@@ -1334,10 +1555,56 @@ margin: auto;
   background-size: cover;
   opacity: 0.8;
   filter: blur(0px);
-  animation: bg-blur 1s forwards 8s ,bg-opacity 1s forwards 8s;
+  animation: bg-blur 1s forwards 5s ,bg-opacity 1s forwards 5s;
+  background-size: 110%;
 
 }
 
+.mobile-block{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  pointer-events: none;
+  cursor: none;
+  width: 400%;
+  height: 400%;
+  background: linear-gradient(0deg, rgba(5,1,9,1) 0%, rgba(132,111,158,1) 100%);
+  opacity: 0;
+}
+
+.mobile-text-block{
+  margin: auto;
+  padding: auto;
+  position: relative;
+  pointer-events: none;
+  cursor: none;
+  top: 40vh;
+  left: 0vh;
+  width: 10vh;
+  height: 5vh;
+  opacity: 0;
+
+}
+
+.mobile-block.mobile{
+  animation: mobile-detected 0s forwards;
+}
+
+.mobile-text-block.mobile{
+  animation: mobile-detected 0s forwards;
+}
+
+.control{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+}
+
+@keyframes mobile-detected {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
 
 @keyframes spin {
   0% {transform: rotate(0deg);} 

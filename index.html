@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="shortcut icon" type="x-icon" href="img/window7.png">
+        <link rel="shortcut icon" type="x-icon" href="favicon.ico">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Luna++</title>
@@ -10,14 +10,23 @@
     </head>
     <body class="noCursor">
 
+
 <div class="sub-body">
         <div class="background"></div>
       <canvas id="bg"></canvas>
-      <script defer type="module" src="/main.js"></script>
 
         <div class="progress-bar" style="--width: 0" data-label="Loading.."></div>
 
         <div class="sidebar"></div>
+        <div class="layer3-handle">
+        <div class="layer3"></div>
+    </div>
+        <div class="layer2-handle">
+        <div class="layer2"></div>
+    </div>
+        <div class="layer1-handle">
+        <div class="layer1"></div>
+        </div>
         <div class="sidebar-grad"></div>
         <div class="sidebar-imgs">
                 <div class="sidebar-img"></div>
@@ -137,9 +146,21 @@
             <div class="img-handle">
             <div class="img1"></div>
             <div class="img2"></div>
-
         </div>
     </div>
+
+    <div class="page-layer-handle3">
+        <div class="sublayer3"></div>
+    </div>
+
+    <div class="page-layer-handle2">
+        <div class="sublayer2"></div>
+    </div>
+
+    <div class="page-layer-handle">
+        <div class="sublayer1"></div>
+    </div>
+
 
 
 <div id="page-one">
@@ -213,5 +234,13 @@
 
         <div class="circle"></div>
 
+        <div class="mobile-block"></div>
+        <div class="mobile-text-block">
+            <p class="OnPageText">This website it not compatible with mobile :(</p>
+        </div>
+
      </body>
+
+     <script defer src="main.js"></script>
+
 </html>

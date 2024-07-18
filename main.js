@@ -271,35 +271,6 @@ const changePageContent = e => {
 
     }
 
-
-    /* 
-    
-    if(e.target == document.querySelector('.window3') || e.target == document.querySelector('.proj3') == true){
-        
-        document.getElementById("txt1").textContent="One of the first ever big projects I've worked on. However, since this was my first big project, I made a ton of mistakes from which I learned. I hadn't planned anything when first starting this project that mistake would be the sole reason why I couldn't finish my game. My game was simply too ambitious, it would be nearly impossible for a single developer to create all the features, story elements, and gameplay elements that I imagined my game would have, which later caused me to burn out and lose the drive and motivation to continue further developing my game. But other than that \"Giant Simulator\" has an appealing aesthetic to it. I play this game from time to time just to check out how well my game aged, and each time I played, I was impressed by how smoothly everything was. Overall I enjoyed the time I've spent building this, unfortunately, my ideas were too ambitious for them to be properly integrated.";
-        document.querySelector('.title').style.backgroundImage = "url(img/giant.png)";
-
-        document.querySelector('.yt').contentWindow.location.replace('yt-videos/yt-video3.html');
-        document.querySelector('.yt').style.opacity = 1;
-
-        document.querySelector('.no-video').style.opacity = 0;
-
-        document.querySelector('.github-link').href = 'https://github.com/LukasAdom/Giant-Simulator-Beta-';
-        document.querySelector('.source-code-main').style.opacity = 1;
-        document.querySelector('.source-code-main').style.pointerEvents = "all";
-
-        document.querySelector('.play-link').href = 'https://www.roblox.com/games/4474368970/Giant-Simulator-BETA';
-        document.querySelector('.play-button-main').style.opacity = 1;
-        document.querySelector('.play-button-main').style.pointerEvents = "all";
-
-
-        document.querySelector('.roblox-link').href = '';
-        document.querySelector('.roblox-redirect-main').style.opacity = 0;
-        document.querySelector('.roblox-redirect-main').style.pointerEvents = "none";
-
-    */
-
-
     if(e.target == document.querySelector('.window5') || e.target == document.querySelector('.proj5') == true){
         
         document.getElementById("txt1").textContent="I made a basic A* algorithm that I was supposed to use on my pathfinding AI until I realized that under the time constraint I was on at the time I couldn't be able to finish this. Enjoy dissecting the code :).";
